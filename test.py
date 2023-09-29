@@ -29,11 +29,7 @@ pipeline = transformers.pipeline(
 )
 
 # Prompt text so far
-promptText = """
-<<SYS>>
-    You are a general-purpose AI assistant. Answer the user in short, concise sentences.
-<</SYS>>
-"""
+promptText = ""
 
 # Loop
 while True:
@@ -42,7 +38,7 @@ while True:
     inputText = input("Input: ")
 
     # Attach to the prompt
-    promptText += f"\n[INST]{inputText}[/INST]\n"
+    promptText += f"Q: {inputText}\nA:"
 
     # print("")
     # print("=== BLOCK")
@@ -64,7 +60,7 @@ while True:
     outputText = fullText[len(promptText) : len(fullText)]
 
     # Attach output to the prompt text
-    promptText += outputText
+    promptText += outputText + "\n"
 
 
 # Log output
