@@ -1,0 +1,25 @@
+# Just a general chat conversation.
+
+[context]
+user.name: Josh Fox
+
+[stream]
+INPUT: TIME: 2019-01-01 12:00:00
+RESPONSE: SKIP
+INPUT: TIME: 2019-01-01 12:01:00
+RESPONSE: SKIP
+INPUT: TIME: 2019-01-01 12:02:00
+RESPONSE: SKIP
+INPUT: TIME: 2019-01-01 12:03:00
+RESPONSE: SKIP
+
+INPUT: TEXT: Hello.
+RESPONSE: SAY: Hi.
+RESPONSE: SAY: Hello!
+RESPONSE: SAY: Hi there.
+RESPONSE: SAY: Hi, how can I help you?
+RESPONSE: SAY: Hi Josh, welcome back.
+RESPONSE: SAY: Hey Josh, how are you?
+
+INPUT: TIME: 2019-01-01 12:03:00
+RESPONSE: SKIP

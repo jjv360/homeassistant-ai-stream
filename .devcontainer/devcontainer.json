@@ -1,0 +1,14 @@
+{
+
+	// Container info
+	"name": "HuggingFace GPU",
+	"build": { "dockerfile": "Dockerfile" },
+
+	// Use a fixed workspace folder name
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+	"workspaceFolder": "/workspace",
+	
+	// Enable GPU access
+	"runArgs": [ "--gpus", "all" ]
+
+}
